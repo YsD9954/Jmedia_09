@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+tensorflow
+xgboost
+pydantic
+numpy
+scikit-learn
+pandas
+scrapy
+prophet
