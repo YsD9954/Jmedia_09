@@ -9,7 +9,7 @@ import joblib
 import xgboost as xgb
 
 # Load Dataset
-df = pd.read_csv("datasets/race_data.csv")
+df = pd.read_csv("trackvisionai_race_data.csv")
 
 # Encode Categorical Variables
 label_encoder = LabelEncoder()
