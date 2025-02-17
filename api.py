@@ -4,7 +4,7 @@ import pickle
 import os
 from prophet import Prophet
 
-router = APIRouter()
+app = FastAPI(title="TrackVisionAI API")
 
 # Ensure model exists
 model_path = "models/prophet_model.pkl"
