@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import os
 from prophet import Prophet
+from api import router
 
 app = FastAPI(title="TrackVisionAI API")
 
