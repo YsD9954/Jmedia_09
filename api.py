@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 from prophet import Prophet
-from api import router
+
 
 app = FastAPI(title="TrackVisionAI API")
 
@@ -16,11 +16,11 @@ if not os.path.exists(model_path):
 with open(model_path, "rb") as f:
     prophet_model = pickle.load(f)
 
-@router.get("/")
+@app.get("/")
 def home():
     return {"message": "TrackVisionAI API is running!"}
 
-@router.post("/predict/")
+@app.post("/predict/")
 def predict(data: dict):
     try:
         days = data.get("days", 10)  # Default to 10 days
